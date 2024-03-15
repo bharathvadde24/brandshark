@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.home {
+    background-image: url("https://skinmumma.com/cdn/shop/files/1519x829fd4.jpg?v=1707116820");
+    height: 100vh;
+    background-size: cover;
+
+
+}
+
+button {
+    background-color: transparent;
+
+}
+
+.blink:hover {
+    color: blue;
+    font-size: 20px;
+    border-color: red;
+
+    button {
+        background-color: #C5ACA9;
+        border-color: red;
+        border: none;
+    }
+
+    .imlg {
+        height: 70%;
+        width: 100%;
+    }
+}
+
+
+
+/* suvvi */
+
+.container {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+h3 {
+    display: inline-block;
+    width: 25%;
+    border-bottom: solid 2px orange;
+}
+
+.containerBigChild {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.containersmallChild {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mainlogo {
+    height: 4rem;
+    width: 8rem;
+    background-color: orange;
+}
+
+.moreDetails {
+    padding: 2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.moreDetails>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.inputElement {
+    display: flex;
+}
+
+footer {
+    border-top: 2px solid #8b878f;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>div {
+    display: flex;
+    gap: 6px;
+}
+
+footer>p {
+    color: #8b878f;
+}
+
+footer>div>p {
+    color: #8b878f;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    .footerData {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .containerBigChild {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .moreDetails {
+        display: flex;
+        justify-content: start;
+    }
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    /* Adjust as needed */
+    right: 20px;
+    /* Adjust as needed */
+    z-index: 1000;
+    /* Ensure it appears on top of other elements */
+}
+
+.whatsapp img {
+    width: 50px;
+    /* Adjust the size of the icon */
+    height: 50px;
+    /* Adjust the size of the icon */
+}
+
+button {
+    background-color: transparent;
+}
+
+.blink:hover .imlg {
+    transform: scale(1.1);
+    /* Zoom effect for image */
+}
+
+.blink:hover button {
+    display: block;
+    /* Show button on hover */
+    background-color: #C5ACA9;
+    border-color: red;
+    border: none;
+    color: blue;
+    font-size: 20px;
+}
+
+button {
+    display: none;
+    /* Initially hide the button */
+}
+
+.imlg {
+    height: 50%;
+    width: 70%;
+    transition: transform 0.5s;
+    /* Add transition for smooth zoom effect */
+}
